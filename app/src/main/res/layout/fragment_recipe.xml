@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#CC8722"
     android:id="@+id/recipeFragment"
-    tools:context="com.recipekorea.fragments.RecipeFragment">
+    tools:context="com.recipekorea.screen.main.recipe.RecipeFragment">
 
     <TextView
         android:id="@+id/recipe_fragment_title"

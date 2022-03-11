@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.recipekorea.fragments.HomeFragment"
+        android:name="com.recipekorea.screen.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
 
     </fragment>
     <fragment
         android:id="@+id/recipeFragment"
-        android:name="com.recipekorea.fragments.RecipeFragment"
+        android:name="com.recipekorea.screen.main.recipe.RecipeFragment"
         android:label="fragment_recipe"
         tools:layout="@layout/fragment_recipe">
 
@@ -22,7 +22,28 @@
 
     <fragment
         android:id="@+id/mypageFragment"
-        android:name="com.recipekorea.fragments.MypageFragment"
+        android:name="com.recipekorea.screen.main.mypage.MypageFragment"
         android:label="fragment_mypage"
         tools:layout="@layout/fragment_mypage" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.recipekorea.screen.main.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.recipekorea.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

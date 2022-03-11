@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#4D1BA5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FBFBFB"
     android:id="@+id/homeFragment"
-    tools:context="com.recipekorea.fragments.HomeFragment">
+    tools:context="com.recipekorea.screen.main.home.HomeFragment">
 
-    <TextView
+    <Button
+        android:id="@+id/moveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="홈 프래그먼트"
-        android:textSize="50sp"
-        android:layout_centerInParent="true"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="이동"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

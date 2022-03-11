@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#009688"
     android:id="@+id/mypageFragment"
-    tools:context="com.recipekorea.fragments.MypageFragment">
+    tools:context="com.recipekorea.screen.main.mypage.MypageFragment">
 
     <TextView
         android:layout_width="wrap_content"
