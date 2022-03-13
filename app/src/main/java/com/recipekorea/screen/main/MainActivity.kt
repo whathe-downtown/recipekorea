@@ -1,10 +1,11 @@
 package com.recipekorea.screen.main
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+
 import android.view.View
-import androidx.core.view.isVisible
+
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.recipekorea.R
@@ -22,13 +23,23 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.my_nav_host) as NavHostFragment
 
-        Handler().postDelayed({
-            binding.myBottomNav.visibility = View.VISIBLE
-        },3000)
+
+
+        binding.myBottomNav.visibility = View.VISIBLE
+
         //네이게이션 컨트롤러
         val navController = navHostFragment.navController
 
         NavigationUI.setupWithNavController(binding.myBottomNav, navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.homeFragment -> binding.myBottomNav.visibility = View.VISIBLE
+                R.id.recipeFragment -> binding.myBottomNav.visibility = View.VISIBLE
+                R.id.mypageFragment -> binding.myBottomNav.visibility = View.VISIBLE
+                else -> binding.myBottomNav.visibility = View.GONE
+            }
+        }
 
 
     }
@@ -36,4 +47,6 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
     }
+
+
 }

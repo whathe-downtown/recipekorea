@@ -23,7 +23,9 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
 
         Handler().postDelayed({
             if (onBoardingFinished()){
+
                 findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }
@@ -35,5 +37,6 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished", false)
     }
+
 
 }

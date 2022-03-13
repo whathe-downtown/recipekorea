@@ -81,6 +81,8 @@ dependencies {
     def livedata_version ="2.4.1"
     runtimeOnly("androidx.lifecycle:lifecycle-livedata:$livedata_version")
 
+    // UI
+    implementation 'com.tbuonomo:dotsindicator:4.2'
     //새로고침 용도
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
 
