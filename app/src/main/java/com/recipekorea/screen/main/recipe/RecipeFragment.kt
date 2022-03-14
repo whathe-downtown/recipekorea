@@ -1,28 +1,26 @@
 package com.recipekorea.screen.main.recipe
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.recipekorea.R
+import com.recipekorea.databinding.FragmentFirstScreenBinding
 import com.recipekorea.databinding.FragmentRecipeBinding
+import com.recipekorea.screen.main.base.BaseFragment
 
-class RecipeFragment : Fragment() {
+class RecipeFragment : BaseFragment<FragmentRecipeBinding>(FragmentRecipeBinding::inflate){
 
-    private var mBinding : FragmentRecipeBinding? =null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val binding = FragmentRecipeBinding.inflate(inflater, container, false)
-        mBinding = binding
-        return  binding.root
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
     }
 
-    override fun onDestroy() {
-        mBinding = null
-        super.onDestroy()
-    }
+
+
+
+
+
 }

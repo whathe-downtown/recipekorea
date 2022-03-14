@@ -1,4 +1,4 @@
-package com.recipekorea.screen.main.recipe
+package com.recipekorea.screen.main
 
 
 import android.os.Bundle

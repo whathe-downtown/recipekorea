@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_cart"
+        android:title="cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_bell"
+        android:title="bell"
+        android:icon="@drawable/ic_bell_24"
+        app:showAsAction="always"/>
+
+</menu>
