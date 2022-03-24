@@ -35,9 +35,9 @@ class RecipeActivity : AppCompatActivity() {
 
         binding.viewpager.adapter = MenuViewPagerAdapter(list)
         binding.viewpager.orientation =ViewPager2.ORIENTATION_HORIZONTAL
-        TabLayoutMediator(binding.tabLayout, binding.viewPager){tab ,position ->
-            tab.text  = "Title $position"
-       }.attach()
+//        TabLayoutMediator(binding.tabLayout, binding.viewPager){tab ,position ->
+//            tab.text  = "Title $position"
+//       }.attach()
     }
 
 
