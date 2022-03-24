@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayoutMediator
 import com.recipekorea.R
 import com.recipekorea.data.notice.DataPage
 import com.recipekorea.databinding.ActivityRecipeBinding
@@ -32,9 +33,14 @@ class RecipeActivity : AppCompatActivity() {
             }
         }
 
-        binding.viewPager.adapter = MenuViewPagerAdapter(list)
-        binding.viewPager.orientation =ViewPager2.ORIENTATION_HORIZONTAL
+        binding.viewpager.adapter = MenuViewPagerAdapter(list)
+        binding.viewpager.orientation =ViewPager2.ORIENTATION_HORIZONTAL
+//        TabLayoutMediator(binding.tabLayout, binding.viewPager){tab ,position ->
+//            tab.text  = "Title $position"
+//        }.attach()
     }
+
+
 
 
 }

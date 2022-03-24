@@ -12,19 +12,7 @@
         tools:layout="@layout/fragment_home" >
 
     </fragment>
-    <fragment
-        android:id="@+id/recipeFragment"
-        android:name="com.recipekorea.screen.main.recipe.RecipeFragment"
-        android:label="fragment_recipe"
-        tools:layout="@layout/fragment_recipe">
 
-    </fragment>
-
-    <fragment
-        android:id="@+id/mypageFragment"
-        android:name="com.recipekorea.screen.main.mypage.MypageFragment"
-        android:label="fragment_mypage"
-        tools:layout="@layout/fragment_mypage" />
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.recipekorea.screen.main.splash.SplashFragment"
@@ -46,4 +34,14 @@
             android:id="@+id/action_viewPagerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.recipekorea.screen.main.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.recipekorea.screen.main.mypage.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" />
 </navigation>

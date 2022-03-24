@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#BDB9B9"
-    android:id="@+id/recipeFragment"
-    tools:context="com.recipekorea.screen.main.recipe.RecipeFragment">
+    android:id="@+id/searchFragment"
+    tools:context="com.recipekorea.screen.main.search.SearchFragment">
 
 
     <ImageView
