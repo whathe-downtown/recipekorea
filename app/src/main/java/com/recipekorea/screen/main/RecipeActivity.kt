@@ -32,7 +32,7 @@ class RecipeActivity : AppCompatActivity() {
                 add(DataPage(android.R.color.black, "6 Page"))
             }
         }
-
+        //findviewById
         binding.viewpager.adapter = MenuViewPagerAdapter(list)
         binding.viewpager.orientation =ViewPager2.ORIENTATION_HORIZONTAL
 //        TabLayoutMediator(binding.tabLayout, binding.viewPager){tab ,position ->
