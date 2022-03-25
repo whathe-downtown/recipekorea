@@ -17,7 +17,7 @@ import com.recipekorea.onboarding.ViewPagerAdapter
 class RecipeActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityRecipeBinding
-
+    //findviebyid
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_recipe)
